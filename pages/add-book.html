@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Resenha - Minha Estante Virtual</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">Minha Estante Virtual</a></h1>
+        <nav>
+            <a href="../index.html">Estante</a>
+            <a href="add-book.html">Adicionar Resenha</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Demonstração: Enviar Nova Avaliação</h2>
+            <p class="notice">Aviso: Este formulário é um exemplo com dados fictícios. Ele não salva resenhas no servidor nem adiciona livros permanentemente à estante.</p>
+            
+            <form action="add-book.html" method="get">
+                <div class="form-group">
+                    <label for="title">Título do Livro *</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Autor(a)</label>
+                    <input type="text" id="author" name="author">
+                </div>
+
+                <div class="form-group">
+                    <label for="genre">Gênero</label>
+                    <input type="text" id="genre" name="genre">
+                </div>
+
+                <div class="form-group">
+                    <label for="cover">Endereço da Capa (URL)</label>
+                    <input type="url" id="cover" name="cover">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Data da Leitura</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Avaliação (1 a 5) *</label>
+                    <select id="rating" name="rating" required>
+                        <option value="" disabled selected>Selecione uma nota</option>
+                        <option value="1">1 - Ruim</option>
+                        <option value="2">2 - Regular</option>
+                        <option value="3">3 - Bom</option>
+                        <option value="4">4 - Muito Bom</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="review">Resenha Completa *</label>
+                    <textarea id="review" name="review" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Avaliação (Demonstração)</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Minha Estante Virtual</p>
+    </footer>
+</body>
+</html>
